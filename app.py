@@ -1,7 +1,7 @@
 from pywa import WhatsApp
 from flask import Flask
 from pywa.types import Message
-from pywa.filters import  CallbackFilter
+# from pywa.filters import  CallbackFilter
 import requests
 # import mysql.connector
 
@@ -54,8 +54,8 @@ def hello(client: WhatsApp, message: Message):
     )
     print('pdf send')
 
-@wa.on_callback_button(CallbackFilter.data_startswith('id'))
-def click_me(client: WhatsApp, clb: CallbackButton):
-    clb.reply_text('You clicked me!')
+# @wa.on_callback_button(CallbackFilter.data_startswith('id'))
+# def click_me(client: WhatsApp, clb: CallbackButton):
+#     clb.reply_text('You clicked me!')
 
 flask_app.run()  # Run the flask app to start the webhook
