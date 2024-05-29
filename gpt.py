@@ -240,7 +240,7 @@ def clear_chatss():
     except :
         return { "status":"error","message":"Something went wrong,chat doesn't exist" }
 
-@app.route('/'])
+@app.route('/')
 def home():
     return 'chatbot is up'
 
