@@ -1,7 +1,7 @@
 from pywa import WhatsApp
 from flask import Flask
 from pywa.types import Message
-from pywa.filters import TextFilter, CallbackFilter
+from pywa.filters import  CallbackFilter
 import requests
 # import mysql.connector
 
