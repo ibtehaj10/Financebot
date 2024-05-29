@@ -63,7 +63,7 @@ def gpt(inp):
     print("inp : \n ",new_inp)
     openai.api_key = apikeys
     completion = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo", 
+    model="gpt-4", 
     messages=new_inp
     )
     return completion
@@ -243,5 +243,5 @@ def clear_chatss():
 
 
 if __name__ == '__main__':
-    app.run(port=5002)
+    app.run(port=5002,host="0.0.0.0")
     
