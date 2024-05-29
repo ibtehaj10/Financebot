@@ -70,7 +70,7 @@ def gpt(inp):
 
 ############    GET CHATS BY USER ID ##################
 def get_chats(id):
-    path = str(os.getcwd())+'\\chats\\'+id+'.json'
+    path = id
     isexist = os.path.exists(path)
     if isexist:
         data = pd.read_json(path)
@@ -85,7 +85,7 @@ def get_chats(id):
 
 ############### APPEND NEW CHAT TO USER ID JSON FILE #################
 def write_chat(new_data, id):
-    with open("chats/"+id+".json",'r+') as file:
+    with open(id,'r+') as file:
           # First we load existing data into a dict.
         file_data = json.load(file)
         # Join new_data with file_data inside emp_details
@@ -174,20 +174,20 @@ def check_user():
     ids = request.json['user_id']
     prompt = request.json['prompt']
     print("asd")
-    path = str(os.getcwd())+'\\chats\\'+ids+'.json'
+    path = str(os.getcwd())+'//chats//'+str(ids)+'.json'
     # path = str(os.getcwd())+'\\'+"5467484.json"
     isexist = os.path.exists(path)
     if isexist:
         # try:
         print(path," found!")
-        write_chat({"role":"user","content":prompt},ids)
+        write_chat({"role":"user","content":prompt},path)
         # print()
-        chats = get_chats(ids)
+        chats = get_chats(path)
         print(chats)
         send = gpt(chats)
         reply = send.choices[0].message
         print("reply    ",reply.content)
-        write_chat({"role":"assistant","content":reply.content},ids)
+        write_chat({"role":"assistant","content":reply.content},path)
         if "``"  in reply.content:
             print('json found')
             fetch = fetch_json(reply.content)
