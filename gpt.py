@@ -240,7 +240,9 @@ def clear_chatss():
     except :
         return { "status":"error","message":"Something went wrong,chat doesn't exist" }
 
-
+@app.route('/'])
+def home():
+    return 'chatbot is up'
 
 if __name__ == '__main__':
     app.run(port=5002,host="0.0.0.0")
