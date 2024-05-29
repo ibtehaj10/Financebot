@@ -32,6 +32,7 @@ def gpt(inp):
                ```
               {
                 "company_name": "Proxima AI",
+                "company_address": "ICCBS Karachi",
                 "items": [
                     {
                     "name": "Mobile app",
@@ -47,7 +48,6 @@ def gpt(inp):
                "client_address":"Lahore",
                 "client_name": "Contegris",
                 "client_phone":"+923106514851",
-                "company_address": "ICCBS Karachi",
                 "client_email": "contegris@gmail.com",
                 "bank":"State Bank , Karachi Branch",
                 "account_number" :5645135485454",
@@ -160,7 +160,7 @@ def invoice(data, output_filename="invoice.pdf"):
         accountnumber=accountnumber,
 
         currency=currency,
-  
+        
         accountname="Meezan Bank",
 
                                )
