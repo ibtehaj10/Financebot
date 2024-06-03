@@ -47,7 +47,7 @@ def hello(client: WhatsApp, message: Message):
         )
     else:
         message.reply_document(
-        "invoice.pdf",
+        "Invoice.pdf",
         # document="invoice.pdf",
         body="invoice.pdf"
        
