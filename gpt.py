@@ -56,6 +56,7 @@ def gpt(inp):
                 }
                ```
                else just give some finace advise to user. 
+               IMPORTANT all these fields are mandetory if user didn't want to add any of them mark them "". but they all should be in json
     
     """}
     new_inp = inp
