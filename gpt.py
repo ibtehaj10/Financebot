@@ -157,17 +157,17 @@ def invoice(data, output_filename="invoice.pdf"):
     invoice = InvoiceGenerator(
         company_name=comp_name,
         client_name=client_name,
-        itemlist=items,
-        companyStreetAddress=company_address,
-        email=client_email,
-        customerStreetAddress=client_address,
-        bankname=bank,
-        notes=note,
-        accountnumber=accountnumber,
+        items=items,
+        company_address =company_address,
+        client_email =client_email,
+        client_address =client_address,
+        bank=bank,
+        note=note,
+        client_address =accountnumber,
 
-        currency=currency,
+        currency =currency,
         
-        accountname="Meezan Bank",
+        # accountname="Meezan Bank",
 
                                )
     invoice.call()
