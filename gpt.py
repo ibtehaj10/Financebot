@@ -146,7 +146,10 @@ def invoice(data, output_filename="invoice.pdf"):
     client_email = data['client_email']
     client_address = data['client_address']
     bank = data['bank']
-    note = data['note']
+    if "note" in data: 
+        note = data['note']
+    else:
+        note = ""
     accountnumber = data['account_number']
     currency = data['currency']
 
