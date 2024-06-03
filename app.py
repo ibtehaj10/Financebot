@@ -50,7 +50,7 @@ def hello(client: WhatsApp, message: Message):
         "Invoices.pdf",
         "Invoices.pdf",
         # document="invoice.pdf",
-        body="Invoices.pdf"
+        # body="Invoices.pdf"
        
     )
     print('pdf send')
