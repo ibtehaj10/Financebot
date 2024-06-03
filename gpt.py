@@ -138,7 +138,10 @@ def invoice(data, output_filename="invoice.pdf"):
     comp_name = data['company_name']
     items =data['items']
     client_name = data['client_name']
-    company_address = data['company_address']
+    if 'company_address' in data:
+        company_address = data['company_address']
+    else:
+        company_address=""
     client_email = data['client_email']
     client_address = data['client_address']
     bank = data['bank']
