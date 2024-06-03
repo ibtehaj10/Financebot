@@ -30,30 +30,29 @@ def gpt(inp):
                when you get all the answer make a Json of it and return it inside '``' dont reply with any message while generating json. 
                see example make sure the json should be exact like that
                ```
-              {
-                "company_name": "Proxima AI",
-                "company_address": "ICCBS Karachi",
-                "items": [
-                    {
-                    "name": "Mobile app",
-                    "quantity": 1,
-                    "price": 2000
-                    },
-                    {
-                    "name": "SEO",
-                    "quantity": 1,
-                    "price": 1000
-                    }
-                ],
-               "client_address":"Lahore",
-                "client_name": "Contegris",
-                "client_phone":"+923106514851",
-                "client_email": "contegris@gmail.com",
-                "bank":"State Bank , Karachi Branch",
-                "account_number" :5645135485454",
-                "note":"This is the note I want to share",
-                "currency":"$"
-                }
+             {
+  "company_name": "Acme Corp",
+  "company_address": "123 Business Rd, Business City, BC 54321",
+  "client_name": "John Doe",
+  "client_email": "john.doe@example.com",
+  "client_address": "456 Residential St, Hometown, HT 12345",
+  "items": [
+    {
+      "name": "Widget A",
+      "quantity": 2,
+      "price": 25.00
+    },
+    {
+      "name": "Widget B",
+      "quantity": 5,
+      "price": 15.00
+    }
+  ],
+  "note": "Thank you for your business!",
+  "bank": "Example Bank",
+  "account_number": "123456789",
+  "currency": "$"
+}
                ```
                else just give some finace advise to user. 
                IMPORTANT all these fields are mandetory if user didn't want to add any of them mark them "". but they all should be in json
