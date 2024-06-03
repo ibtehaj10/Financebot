@@ -47,10 +47,10 @@ def hello(client: WhatsApp, message: Message):
         )
     else:
         message.reply_document(
-        "Invoice.pdf",
-        "Invoice.pdf",
+        "Invoices.pdf",
+        "Invoices.pdf",
         # document="invoice.pdf",
-        body="invoice.pdf"
+        body="Invoices.pdf"
        
     )
     print('pdf send')
