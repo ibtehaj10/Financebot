@@ -156,7 +156,7 @@ def invoice(data, output_filename="invoice.pdf"):
 
     invoice = InvoiceGenerator(
         company_name=comp_name,
-        recipientName=client_name,
+        client_name=client_name,
         itemlist=items,
         companyStreetAddress=company_address,
         email=client_email,
