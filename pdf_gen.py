@@ -149,20 +149,7 @@ class InvoiceGenerator:
 
 
 
-# if __name__=="__main__":
-# #     var={
-#   "company_name": "Proxima AI",
-#   "items": [
-#     {
-#       "name": "Mobile app",
-#       "quantity": 1,
-#       "price": 2000
-#     },
-#     {
-#       "name": "SEO",
-#       "quantity": 1,
-#       "price": 1000
-#     },
+
 #     {
 #       "name": "SEO",
 #       "quantity": 1,
