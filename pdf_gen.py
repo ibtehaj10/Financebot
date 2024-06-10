@@ -144,7 +144,7 @@ class InvoiceGenerator:
         page_layout.add(self.build_some_notices())
         page_layout.add(Paragraph("\nThank You for Your Business", font_size=12))
 
-        with open("Invoice.pdf", "wb") as pdf_file_handle:
+        with open("Invoices.pdf", "wb") as pdf_file_handle:
             PDF.dumps(pdf_file_handle, pdf)
 
 
