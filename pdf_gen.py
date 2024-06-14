@@ -21,7 +21,7 @@ from borb.pdf.page.page import Page
 from borb.pdf.canvas.color.color import HexColor, X11Color
 
 class InvoiceGenerator:
-    def __init__(self, company_name, company_address, client_name, client_email, client_address, items, note, bank, account_number, currency):
+    def __init__(self, company_name="", company_address="", client_name="", client_email="", client_address="", items="", note="", bank="", account_number="", currency=""):
         self.company_name = company_name
         self.company_address = company_address
         self.client_name = client_name
